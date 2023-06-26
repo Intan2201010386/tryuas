@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Nilai</title>
+    <link ref="stylesheet" href="style.css">
+</head>
+<style>
+    .home {
+    background-color: rgb(249, 243, 252);
+    color: hsl(0, 0%, 7%);
+    border: 2px solid rgb(194, 213, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 10%;
+    border-radius: 15px;
+    text-align: center;
+    }
+
+    hr {
+        border-top: 2px solid #51c5e9;
+    }
+    body {
+    display: block;
+    background: #e1f6d8;
+    text-align: center;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Program Menghitung Nilai</h1>
+    </header>
+    <br>
+    <main>
+        <div class="form-container">
+            <div></div>
+            <div>
+                <form class="formCariNilai" action="">
+                    <hr><br>
+                    <input class="inputNilai" id="nilaiTugas" type="number" placeholder="Masukkan Nilai Tugas"><br><br>
+                    <input class="inputNilai" id="nilaiUts" type="number" placeholder="Masukkan Nilai UTS"><br><br>
+                    <input class="inputNilai" id="nilaiUas" type="number" placeholder="Masukkan Nilai UAS"><br><br>
+                    <input class="btnHitung" id="hitung" type="button" placeholder="Hitung" value="Hitung"><br>
+                </form>
+            </div>
+        </div>
+        <div class="answer">
+            <div class="nilaiAngka"></div>
+            <div class="nilaiHuruf"></div>
+        </div>
+        <div class="BtnBack">
+            <div class="home">
+                <a href="index.html"> Back to Home</a>
+            </div>
+        </div>
+    </main>
+    <script src="hitung.js"></script>
+</body>
+</html>
